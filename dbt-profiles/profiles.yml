@@ -1,0 +1,14 @@
+my_project:
+  outputs:
+
+    raw:
+      type: postgres
+      threads: 1
+      host: localhost
+      port: 5435
+      user: postgres_user
+      pass: PostgresP455w0rd
+      dbname: datawarehouse
+      schema: public
+
+  target: raw

@@ -1,0 +1,69 @@
+
+version: 2
+
+sources:
+  - name: datawarehouse
+    database: datawarehouse
+    schema: public
+
+    tables:
+      - name: transactions
+        columns:
+          - name: transaction_id
+            tests:
+              - not_null
+              - unique
+          
+          - name: nominal
+            tests:
+              - not_null
+
+      - name: pay_periods
+        columns:
+          - name: pay_period_id
+            tests:
+              - not_null
+              - unique
+      
+      - name: cashflow_categories
+        columns:
+          - name: cashflow_category_id
+            tests:
+              - not_null
+              - unique
+      
+      - name: cashflow_details
+        columns:
+          - name: cashflow_detail_id
+            tests:
+              - not_null
+              - unique
+      
+      - name: cashflow
+        columns:
+          - name: cashflow_id
+            tests:
+              - not_null
+              - unique
+      
+      - name: destinations
+        columns:
+          - name: destination_id
+            tests:
+              - not_null
+              - unique
+      
+      - name: source_bank
+        columns:
+          - name: source_bank_id
+            tests:
+              - not_null
+              - unique
+      
+      - name: transaction_methods
+        columns:
+          - name: transaction_method_id
+            tests:
+              - not_null
+              - unique
+              

@@ -1,0 +1,51 @@
+version: 2
+
+models:
+  - name: dim_cashflow_categories
+    columns:
+      - name: cashflow_category_id
+        tests:
+          - not_null
+          - unique
+  
+  - name: dim_cashflow_details
+    columns:
+      - name: cashflow_detail_id
+        tests:
+          - not_null
+          - unique
+  
+  - name: dim_cashflow
+    columns:
+      - name: cashflow_id
+        tests:
+          - not_null
+          - unique
+  
+  - name: dim_destinations
+    columns:
+      - name: destination_id
+        tests:
+          - not_null
+          - unique
+  
+  - name: dim_pay_periods
+    columns:
+      - name: pay_period_id
+        tests:
+          - not_null
+          - unique
+  
+  - name: dim_source_bank
+    columns:
+      - name: source_id
+        tests:
+          - not_null
+          - unique
+  
+  - name: dim_transaction_methods
+    columns:
+      - name: transaction_method_id
+        tests:
+          - not_null
+          - unique
