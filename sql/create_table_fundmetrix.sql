@@ -67,8 +67,6 @@ insert into transaction_methods (transaction_method)
 select distinct transaction_method
 from fundmatrix;
 
-drop table transactions;
-
 create table transactions (
     transaction_id serial primary key
     , transaction_date date
