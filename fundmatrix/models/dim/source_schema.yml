@@ -55,7 +55,7 @@ sources:
       
       - name: source_bank
         columns:
-          - name: source_bank_id
+          - name: source_id
             tests:
               - not_null
               - unique
