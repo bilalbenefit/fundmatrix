@@ -4,11 +4,11 @@ fundmatrix:
     raw:
       type: postgres
       threads: 1
-      host: localhost
-      port: 5435
-      user: postgres_user
-      pass: PostgresP455w0rd
-      dbname: datawarehouse
+      host: "{{ env_var('db_host') }}"
+      port: "{{ env_var('db_port') }}"
+      user: "{{ env_var('db_user') }}"
+      pass: "{{ env_var('db_pass') }}"
+      dbname: "{{ env_var('db_name') }}"
       schema: public
 
   target: raw

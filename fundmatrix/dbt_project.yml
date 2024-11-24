@@ -45,5 +45,5 @@ models:
     
     mart:
       +materialized: table
-      +schema: fct
+      +schema: mart
       +database: datawarehouse
