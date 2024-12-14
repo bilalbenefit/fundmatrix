@@ -1,4 +1,4 @@
-with trans as ( -- noqa: 
+with trans as (
     select
         transactions.transaction_id
         , transactions.transaction_date

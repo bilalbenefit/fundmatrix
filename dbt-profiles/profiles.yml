@@ -5,7 +5,7 @@ fundmatrix:
       type: postgres
       threads: 1
       host: "{{ env_var('db_host') }}"
-      port: "{{ env_var('db_port') }}"
+      port: "{{ env_var('db_port') | int }}"
       user: "{{ env_var('db_user') }}"
       pass: "{{ env_var('db_pass') }}"
       dbname: "{{ env_var('db_name') }}"
